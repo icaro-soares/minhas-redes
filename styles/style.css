@@ -1,0 +1,100 @@
+:root {
+    --fundo-principal: #141414;
+    --card: #1f1f1f;
+    --subtitulo: #9acd32;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--fundo-principal);
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 350px;
+    height: 600px;
+
+    background-color: var(--card);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 40px;
+
+    padding: 10px;
+}
+
+section img {
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+section #dados {
+    text-align: center;
+    margin: 10px 0;
+}
+
+section h1 {
+    font-size: 1.5em;
+}
+
+section h2 {
+    font-size: 1em;
+    color: var(--subtitulo);
+    margin-top: .5em;
+}
+
+section p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+section ul {
+    list-style: none;
+    display: block;
+}
+
+section li {
+    width: 100%;
+    border: 1px solid var(--fundo-principal);
+    background-color: var(--fundo-principal);
+    border-radius: .5em;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: .5s;
+}
+
+section li:hover {
+    background-color: #292828;
+    border-color: #292828;
+}
+
+section i {
+    margin: 0 10px;
+}
+
+section a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
